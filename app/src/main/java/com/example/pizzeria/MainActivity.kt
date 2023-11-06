@@ -17,15 +17,39 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         var entrega: String
 
+        //eventos de botones de radio
         binding.radiogroup.setOnCheckedChangeListener  { _,claveloqueyoquiera ->
             //2 parametros:  1: _ =null en java 2: lo que yo quiera "claveloqueyoquiera" para referenciarlo despues en el when
             when (claveloqueyoquiera){
-                R.id.domicilio -> Toast.makeText(this,"Entrega a Domicilio", Toast.LENGTH_SHORT).show()
-                R.id.local -> Toast.makeText(this,"Recoger en local",Toast.LENGTH_SHORT).show()
+                R.id.domicilio -> showToast("Entrega a Domicilio")
+                R.id.local -> showToast("Recoger en Local")
+
             }
         }
 
-        binding.jamonserrano.setOnClickListener { onCheckboxClicked(it) }
+        //eventos de checkbox
+        binding.aceitunas.setOnClickListener{
+            DiferenciarCheckbox(binding.aceitunas)
+        }
+        binding.jamonserrano.setOnClickListener{
+            DiferenciarCheckbox(binding.jamonserrano)
+        }
+        binding.anchoas.setOnClickListener{
+            DiferenciarCheckbox(binding.anchoas)
+        }
+        binding.bacon.setOnClickListener{
+            DiferenciarCheckbox(binding.bacon)
+        }
+        binding.champinhones.setOnClickListener{
+            DiferenciarCheckbox(binding.champinhones)
+        }
+        binding.peperoni.setOnClickListener{
+            DiferenciarCheckbox(binding.peperoni)
+        }
+
+
+
+
 
 
 
@@ -73,10 +97,20 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun onCheckboxClicked(view: View) {
-        val checked=(view as CheckBox).isChecked
-        when (view.id){
-            R.id.anchoas -> Toast.makeText(this,"Anchoas seleccionado", Toast.LENGTH_SHORT).show()
+    private fun DiferenciarCheckbox(checkBox: CheckBox){
+        val estaChequeado=checkBox.isChecked
+        val checkBoxText=checkBox.text
+        if(estaChequeado){
+            showToast("$checkBoxText seleccionado")
+        }else{
+            showToast("$checkBoxText deseleccionado")
         }
     }
+
+    private fun showToast(string: String) {
+        Toast.makeText(this,string,Toast.LENGTH_SHORT).show()
+
+    }
+
+
 }

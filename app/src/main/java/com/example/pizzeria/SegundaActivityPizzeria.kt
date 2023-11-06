@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import android.app.AlertDialog
+import android.content.DialogInterface
 
 class SegundaActivityPizzeria : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,8 +29,27 @@ class SegundaActivityPizzeria : AppCompatActivity() {
 
         val boton: Button=findViewById(R.id.boton)
         boton.setOnClickListener {
-            Toast.makeText(this,"Pedido Confirmado", Toast.LENGTH_LONG).show()
+            showAlertDialog()
         }
 
+    }
+    private fun showToast(string: String) {
+        Toast.makeText(this,string,Toast.LENGTH_SHORT).show()
+
+    }
+    private fun showAlertDialog() {
+        val alertDialogBuilder = AlertDialog.Builder(this)
+
+        alertDialogBuilder.setTitle("Confirmacion de Pedido")
+        alertDialogBuilder.setMessage("El pedido va a pasar a ser procesado")
+        alertDialogBuilder.setPositiveButton("Aceptar") { dialog: DialogInterface, which: Int ->
+           showToast("Pedido Confirmado")
+        }
+        alertDialogBuilder.setNegativeButton("Cancelar") { dialog: DialogInterface, which: Int ->
+           showToast("Pedido cancelado")
+        }
+
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
     }
 }
