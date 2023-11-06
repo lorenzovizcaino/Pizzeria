@@ -13,4 +13,5 @@
     <string name="botonCalcular">Pedir</string>
     <string name="tituloview2">Confirmacion de pedido</string>
     <string name="boton">Aceptar</string>
+    <string name="pedido_confirmado">Pedido confirmado</string>
 </resources>

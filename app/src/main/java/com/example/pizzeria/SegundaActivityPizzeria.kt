@@ -43,7 +43,9 @@ class SegundaActivityPizzeria : AppCompatActivity() {
         alertDialogBuilder.setTitle("Confirmacion de Pedido")
         alertDialogBuilder.setMessage("El pedido va a pasar a ser procesado")
         alertDialogBuilder.setPositiveButton("Aceptar") { dialog: DialogInterface, which: Int ->
-           showToast("Pedido Confirmado")
+            val string = resources.getString(R.string.pedido_confirmado)
+
+            showToast(string)
         }
         alertDialogBuilder.setNegativeButton("Cancelar") { dialog: DialogInterface, which: Int ->
            showToast("Pedido cancelado")
