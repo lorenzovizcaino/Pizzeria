@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="4dp"
-        android:text="Aceitunas"
+        android:text="@string/aceitunas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/creaccionPedido" />
 
@@ -24,7 +24,7 @@
         android:layout_marginTop="4dp"
         android:enabled="false"
         android:checked="true"
-        android:text="Anchoas"
+        android:text="@string/anchoas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/jamonserrano" />
 
@@ -43,15 +43,15 @@
             android:id="@+id/local"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:text="Local" />
+            android:layout_marginStart="15dp"
+            android:text="@string/local" />
 
         <RadioButton
             android:id="@+id/domicilio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:text="Domicilio" />
+            android:layout_marginStart="60dp"
+            android:text="@string/domicilio" />
 
 
     </RadioGroup>
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="264dp"
         android:layout_marginTop="4dp"
-        android:text="Peperoni"
+        android:text="@string/peperoni"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/champinhones" />
 
@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Pedir"
+        android:text="@string/botonCalcular"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="264dp"
         android:layout_marginTop="4dp"
-        android:text="Champiñones"
+        android:text="@string/champinhones"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bacon" />
 
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="4dp"
-        android:text="El pedido se entrega en:"
+        android:text="@string/pedidoseentrega"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/anchoas" />
@@ -117,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Creaccion Pedido"
+        android:text="@string/creaccionPedido"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.569"
@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="264dp"
         android:layout_marginTop="4dp"
-        android:text="Bacon"
+        android:text="@string/bacon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/creaccionPedido" />
 
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="4dp"
-        android:text="Jamon"
+        android:text="@string/jamonserrano"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/aceitunas" />
 

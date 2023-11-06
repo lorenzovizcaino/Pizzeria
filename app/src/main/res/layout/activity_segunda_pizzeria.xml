@@ -25,7 +25,7 @@
         android:id="@+id/tituloview2"
         android:layout_width="307dp"
         android:layout_height="54dp"
-        android:text="Confirmacion de pedido"
+        android:text="@string/tituloview2"
         android:textSize="25dp"
         android:textAlignment="center"
         android:textColor="@color/cardview_shadow_start_color"
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:text="Aceptar"
+        android:text="@string/boton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultados" />

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pizzeria</string>
+    <string name="creaccionPedido">Order creation</string>
+    <string name="aceitunas">Olives</string>
+    <string name="jamonserrano">Serrano ham</string>
+    <string name="anchoas">anchovies</string>
+    <string name="bacon">Bacon</string>
+    <string name="champinhones">mushrooms</string>
+    <string name="peperoni">Pepperoni</string>
+    <string name="pedidoseentrega">The order is delivered:</string>
+    <string name="local">pick up locally</string>
+    <string name="domicilio">Home delivery</string>
+    <string name="botonCalcular">Ask</string>
+    <string name="tituloview2">Order confirmation</string>
+    <string name="boton">OK</string>
+</resources>
