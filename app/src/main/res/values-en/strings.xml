@@ -2,10 +2,10 @@
     <string name="app_name">Pizzeria</string>
     <string name="creaccionPedido">Order creation</string>
     <string name="aceitunas">Olives</string>
-    <string name="jamonserrano">Serrano ham</string>
-    <string name="anchoas">anchovies</string>
+    <string name="jamonserrano">Ham</string>
+    <string name="anchoas">Anchovies</string>
     <string name="bacon">Bacon</string>
-    <string name="champinhones">mushrooms</string>
+    <string name="champinhones">Mushrooms</string>
     <string name="peperoni">Pepperoni</string>
     <string name="pedidoseentrega">The order is delivered:</string>
     <string name="local">pick up locally</string>
