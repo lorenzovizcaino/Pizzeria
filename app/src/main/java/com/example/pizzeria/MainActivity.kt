@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding.radiogroup.setOnCheckedChangeListener  { _,claveloqueyoquiera ->
             //2 parametros:  1: _ =null en java 2: lo que yo quiera "claveloqueyoquiera" para referenciarlo despues en el when
             when (claveloqueyoquiera){
-                R.id.domicilio -> showToast("Entrega a Domicilio")
-                R.id.local -> showToast("Recoger en Local")
+                R.id.domicilio -> showToast(getString(R.string.entrega_domicilio))
+                R.id.local -> showToast(getString(R.string.local))
 
             }
         }
@@ -86,8 +86,8 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-            if (binding.local.isChecked) entrega = "Local"
-            else entrega = "Domicilio"
+            if (binding.local.isChecked) entrega = getString(R.string.local)
+            else entrega = getString(R.string.domicilio)
             val intent = Intent(this, SegundaActivityPizzeria::class.java)
             intent.putStringArrayListExtra("lista", lista)
             intent.putExtra("entrega", entrega)
@@ -101,9 +101,9 @@ class MainActivity : AppCompatActivity() {
         val estaChequeado=checkBox.isChecked
         val checkBoxText=checkBox.text
         if(estaChequeado){
-            showToast("$checkBoxText seleccionado")
+            showToast("$checkBoxText "+getString(R.string.selecionado))
         }else{
-            showToast("$checkBoxText deseleccionado")
+            showToast("$checkBoxText "+getString(R.string.deselecionado))
         }
     }
 

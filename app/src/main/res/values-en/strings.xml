@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Pizzeria</string>
+    <string name="entrar">Get in</string>
     <string name="creaccionPedido">Order creation</string>
     <string name="aceitunas">Olives</string>
     <string name="jamonserrano">Ham</string>
@@ -7,11 +8,23 @@
     <string name="bacon">Bacon</string>
     <string name="champinhones">Mushrooms</string>
     <string name="peperoni">Pepperoni</string>
+    <string name="selecionado">selected</string>
+    <string name="deselecionado">deselected</string>
     <string name="pedidoseentrega">The order is delivered:</string>
     <string name="local">pick up locally</string>
     <string name="domicilio">Home delivery</string>
     <string name="botonCalcular">Ask</string>
     <string name="tituloview2">Order confirmation</string>
+    <string name="lista_ingredientes">Ingredients list:</string>
+    <string name="entrega">Delivery:</string>
     <string name="boton">OK</string>
+    <string name="entrega_domicilio">Home delivery</string>
+    <string name="confirmacion_de_pedido">Order confirmation</string>
+    <string name="el_pedido_va_a_ser_procesado">The order will be processed</string>
     <string name="pedido_confirmado">Confirmed order</string>
+    <string name="pedido_cancelado">Canceled order</string>
+    <string name="cancelar">Cancel</string>
+    <string name="aceptar">Accept</string>
+
+
 </resources>
