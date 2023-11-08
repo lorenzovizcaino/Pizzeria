@@ -6,4 +6,17 @@
     </style>
 
     <style name="Theme.Pizzeria" parent="Base.Theme.Pizzeria" />
+    
+    <style name="TextView" parent="@android:style/Widget.EditText">
+        <item name="android:background">@color/color_botones</item>
+
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Atributos del tema -->
+        <item name="colorPrimary">@color/color_botones</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_variant</item>
+        <item name="colorAccent">@color/design_default_color_error</item>
+    </style>
 </resources>

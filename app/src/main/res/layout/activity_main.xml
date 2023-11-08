@@ -20,21 +20,85 @@
         app:srcCompat="@drawable/bandera_italia" />
 
     <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="370dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/cuadrado_blanco" />
+
+
+    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="239dp"
         android:layout_height="189dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pizzeria_kotlin2" />
 
-    <RadioGroup
-        android:id="@+id/radiogroup"
+    <CheckBox
+        android:id="@+id/aceitunas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/aceitunas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creaccionPedido" />
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/color_botones"
+        android:text="@string/botonCalcular"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="370dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5"
+        app:srcCompat="@drawable/cuadrado_blanco" />
+
+    <CheckBox
+        android:id="@+id/champinhones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/champinhones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bacon" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="408dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
         android:checkedButton="@id/local"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,112 +108,87 @@
             android:id="@+id/local"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/carter_one"
             android:text="@string/local" />
 
         <RadioButton
             android:id="@+id/domicilio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/carter_one"
             android:text="@string/domicilio" />
 
 
     </RadioGroup>
 
-    <CheckBox
-        android:id="@+id/anchoas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:checked="true"
-        android:enabled="false"
-        android:text="@string/anchoas"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/jamonserrano" />
-
-    <CheckBox
-        android:id="@+id/bacon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/bacon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/creaccionPedido" />
-
-    <TextView
-        android:id="@+id/creaccionPedido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/creaccionPedido"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <CheckBox
-        android:id="@+id/champinhones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/champinhones"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bacon" />
-
-    <Button
-        android:id="@+id/botonCalcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/botonCalcular"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radiogroup" />
-
-    <CheckBox
-        android:id="@+id/jamonserrano"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/jamonserrano"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/aceitunas" />
-
-    <CheckBox
-        android:id="@+id/aceitunas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/aceitunas"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/creaccionPedido" />
-
     <TextView
         android:id="@+id/pedidoseentrega"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/carter_one"
         android:text="@string/pedidoseentrega"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/anchoas" />
 
     <CheckBox
+        android:id="@+id/anchoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:enabled="false"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/anchoas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jamonserrano" />
+
+    <TextView
+        android:id="@+id/creaccionPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/creaccionPedido"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <CheckBox
+        android:id="@+id/jamonserrano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/jamonserrano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aceitunas" />
+
+    <CheckBox
+        android:id="@+id/bacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/bacon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creaccionPedido" />
+
+    <CheckBox
         android:id="@+id/peperoni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/carter_one"
         android:text="@string/peperoni"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/champinhones" />

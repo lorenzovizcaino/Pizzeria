@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundGravity="bottom|center"
+    android:theme="@style/AppTheme"
     tools:context=".InicioActivity">
+
 
 
     <ImageView
@@ -37,7 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:background="#DA3E3E"
+
+        android:backgroundTint="@color/color_botones"
         android:text="@string/entrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
