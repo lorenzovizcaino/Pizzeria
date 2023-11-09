@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.pizzeria.databinding.ActivityInicioBinding
-
+//co
 class InicioActivity : AppCompatActivity() {
     private lateinit var binding: ActivityInicioBinding
     override fun onCreate(savedInstanceState: Bundle?) {
