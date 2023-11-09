@@ -19,20 +19,6 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/bandera_italia" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="370dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="20dp"
-        android:alpha="0.5"
-        android:scaleType="fitXY"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/cuadrado_blanco" />
-
 
     <ImageView
         android:id="@+id/imageView2"
@@ -43,6 +29,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pizzeria_kotlin2" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="370dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/cuadrado_blanco" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:alpha="0.7"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/cuadrado_blanco" />
 
     <CheckBox
         android:id="@+id/aceitunas"
@@ -60,28 +77,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:backgroundTint="@color/color_botones"
+
         android:text="@string/botonCalcular"
-        android:textSize="20dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radiogroup" />
+        app:layout_constraintTop_toBottomOf="@id/radiogroup"
+        style="@style/conf_botones"/>
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="370dp"
-        android:layout_height="94dp"
-        android:layout_marginTop="20dp"
-        android:alpha="0.5"
-        android:scaleType="fitXY"
-        android:visibility="visible"
 
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView5"
-        app:srcCompat="@drawable/cuadrado_blanco" />
 
     <CheckBox
         android:id="@+id/champinhones"

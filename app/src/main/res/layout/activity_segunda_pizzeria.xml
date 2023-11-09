@@ -32,7 +32,7 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="370dp"
-        android:layout_height="360dp"
+        android:layout_height="340dp"
         android:layout_marginTop="20dp"
         android:alpha="0.5"
         android:scaleType="fitXY"
@@ -47,10 +47,10 @@
         android:id="@+id/resultados"
         android:layout_width="305dp"
         android:layout_height="236dp"
-        android:fontFamily="@font/carter_one"
-        android:text="TextView"
 
-        android:textColor="#0E0E0E"
+        android:text="TextView"
+        style="@style/TextViewFinal"
+
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,11 +78,12 @@
         android:id="@+id/boton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/color_botones"
-        android:layout_marginTop="56dp"
+
+        android:layout_marginTop="36dp"
         android:text="@string/boton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultados" />
+        app:layout_constraintTop_toBottomOf="@+id/resultados"
+        style="@style/conf_botones"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
