@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pizzeria</string>
+    <string name="app_name">Pizza shop Kotlin</string>
     <string name="entrar">Get in</string>
     <string name="creaccionPedido">Order creation</string>
     <string name="aceitunas">Olives</string>
@@ -25,6 +25,16 @@
     <string name="pedido_cancelado">Canceled order</string>
     <string name="cancelar">Cancel</string>
     <string name="aceptar">Accept</string>
+    <string name="autor">Application made by:\nM. Antonio Lorenzo Vizcaino</string>
+    <string name="texto_enviar">Pizza shop Kotlin</string>
+    <string name="no_se_puede">It can´t be done</string>
+    <string name="enlace_no_valido">This is not a valid link</string>
+    <string name="no_hay_navegador">You don´t have any browser to open web page</string>
+    <string name="acerca_de">About</string>
+    <string name="inicio">Start</string>
+    <string name="compartir">Share</string>
+
+
 
 
 </resources>

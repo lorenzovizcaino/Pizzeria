@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pizzeria</string>
+    <string name="app_name">Pizzeria Kotlin</string>
     <string name="entrar">Entrar</string>
     <string name="creaccionPedido">Creaccion Pedido</string>
     <string name="aceitunas">Aceitunas</string>
@@ -22,8 +22,19 @@
     <string name="confirmacion_de_pedido">Confirmación de pedido</string>
     <string name="el_pedido_va_a_ser_procesado">El pedido va a ser procesado</string>
     <string name="pedido_confirmado">Pedido confirmado</string>
-    <string name="pedido_cancelado">Pedido canncelado</string>
+    <string name="pedido_cancelado">Pedido cancelado</string>
     <string name="cancelar">Cancelar</string>
     <string name="aceptar">Aceptar</string>
+    <string name="autor">Aplicacion realizada por:\nM. Antonio Lorenzo Vizcaino</string>
+    <string name="texto_enviar">Pizzeria Kotlin.</string>
+    <string name="no_se_puede">No se puede</string>
+    <string name="enlace_no_valido">Este no es un enlace válido</string>
+    <string name="no_hay_navegador">No tienes ningún navegador para abrir la página web</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="inicio">Inicio</string>
+    <string name="compartir">Compartir</string>
+
+
+
 
 </resources>
